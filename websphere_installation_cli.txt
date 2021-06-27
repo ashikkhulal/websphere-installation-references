@@ -1,0 +1,16 @@
+WEBSPHERE APPLICATION SERVER INSTALLATION CLI:
+
+1. Installation of IBM Installation Manager:
+    You can download IBM Installation Manager 1.7 from the following link:
+        $ wget http://www.ibm.com/support/fixcentral/swg/quickorder?parent=ibm/Rational&product=ibm/Rational/IBM+Installation+Manager&release=1.7.0.0&platform=All&function=fixId&fixids=1.7.0.0-Rational-IBMIM-LINUX-X86_64-20130828_2012&useReleaseAsTarget=true
+        $ unzip <IBM IM>
+        $ cd /<IBM IM>/tools/
+        $ ./imcl install com.ibm.cic.agent -repositories /<IM home path>/repository.config -acceptlicense -showProgress
+        $ cd /opt/IBM/
+2. Installation of Websphere Application Server:
+        Download WAS zip files and unzip them in one folder.
+        $ cd /opt/IBM/InstallationManage/eclipse/tools/
+        $ ./imcl listAvailablePackages -repositories /<path-to-unzip-WAS-folder>/repository.config
+        $ ./imcl install <id-from-the previous-command> -repositories /<path-to-unzip-WAS-folder>/repository.config -acceptlicense -showProgress -record install_was.xml
+
+    WAS will be installed in the /opt/IBM/WebSphere/AppServer directory and the response file will be in the cd /opt/IBM/InstallationManage/eclipse/tools/ directory.
