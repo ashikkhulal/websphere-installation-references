@@ -2,10 +2,10 @@ WEBSPHERE APPLICATION SERVER INSTALLATION GUI:
 
 1. Downloading IBM Installation Manager:
 
-    You can download latest IBM Installation Manager 1.7 from the following link:
+    You can download latest IBM Installation Manager from the following link:
         http://www-01.ibm.com/support/docview.wss?uid=swg24034941
     
-    Or direct link:
+    Or direct link for 1.7:
 
         http://www.ibm.com/support/fixcentral/swg/quickorder?parent=ibm/Rational&product=ibm/Rational/IBM+Installation+Manager&release=1.7.0.0&platform=All&function=fixId&fixids=1.7.0.0-Rational-IBMIM-LINUX-X86_64-20130828_2012&useReleaseAsTarget=true
     
