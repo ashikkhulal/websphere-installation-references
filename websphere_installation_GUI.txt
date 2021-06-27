@@ -1,0 +1,54 @@
+WEBSPHERE APPLICATION SERVER INSTALLATION GUI:
+
+1. Downloading IBM Installation Manager:
+
+    You can download latest IBM Installation Manager 1.7 from the following link:
+        http://www-01.ibm.com/support/docview.wss?uid=swg24034941
+    
+    Or direct link:
+
+        http://www.ibm.com/support/fixcentral/swg/quickorder?parent=ibm/Rational&product=ibm/Rational/IBM+Installation+Manager&release=1.7.0.0&platform=All&function=fixId&fixids=1.7.0.0-Rational-IBMIM-LINUX-X86_64-20130828_2012&useReleaseAsTarget=true
+    
+    After download, you should have agent.installer.linux.gtk.x86_64_1.7.0.20130828_2012.zip file.
+
+2. Installing IBM Installation Manager:
+    Extract the downloaded file using unzip command
+        $ unzip agent.installer.linux.gtk.x86_64_1.7.0.20130828_2012.zip
+    Execute ./install to start installation
+    Click on Next
+    Select the license agreement and click Next
+    Select the Installation Manager Directory to be installed. You can leave it to default if you wish to install under /opt/IBM
+    Review the summary information and click on Install to begin installation
+    Click on Restart Installation Manager on completion wizard.
+    
+    Great, IBM Installation Manager 1.7 is installed now!
+
+3. Downloading IBM WAS 8.5.5 ND: 
+    You can download WAS ND 8.5.5 Trial from the following link
+        http://www-03.ibm.com/software/products/us/en/appserv-wasnd/
+    After download, you should have following three files.
+        was.repo.8550.ndtrial_part1.zip
+        was.repo.8550.ndtrial_part2.zip
+        was.repo.8550.ndtrial_part3.zip
+
+4. Installing WAS 8.5.5 Network Deployment: 
+    Extract the downloaded file using unzip command
+        $ unzip was.repo.8550.ndtrial_part1.zip
+        $ unzip was.repo.8550.ndtrial_part2.zip
+        $ unzip was.repo.8550.ndtrial_part3.zip
+    Launch IBM Installation Manager if you have closed already. To launch you can go to /opt/IBM/InstallationManager/eclipse and execute
+        $ ./IBMIM
+    Click on File >> Preferences
+    Click on Add Repository
+    Click on Browse and select repository.config which you got after extracting from was.repo.8550.ndtrial_part1.zip
+    Click on Ok
+    Click on Install
+    Select Version 8.5.5.0 and click on Next
+    Select the license agreement and click Next
+    Click on browse to select Installation Directory, or you can leave it to default location /opt/IBM/WebSphere/AppServer and click on Next
+    Select the additional language if you wish else click on Next
+    You can customize the features, for ex: you can install sample applications and click on Next
+    Review the installation summary and click on Install
+    Select None and click on Finish
+    
+That’s all!
